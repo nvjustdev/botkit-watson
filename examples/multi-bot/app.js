@@ -24,6 +24,9 @@ var middleware = require('botkit-middleware-watson')({
   version_date: '2017-05-26'
 });
 
+console.log("username = " + process.env.CONVERSATION_USERNAME);
+console.log("password = " + process.env.CONVERSATION_PASSWORD);
+
 module.exports = function(app) {
   if (process.env.USE_SLACK) {
     var Slack = require('./bot-slack');

@@ -1,0 +1,26 @@
+{
+  "name": "Botkit Sample",
+  "description": "A Slack applications",
+  "repository": "https://github.com/nvjustdev/botkit-sample",
+  "keywords": ["node", "bots", "slack","botkit"],
+  "website": "https://",
+  "success_url":"/",
+  "addons":[
+    {
+      "plan": "mongolab",
+      "as": "MONGO"
+    }
+  ],
+  "env": {
+      "clientId": {
+          "description": "Client ID provided by Slack"
+      },
+      "clientSecret": {
+          "description": "Client Secret provided by Slack"
+      },
+      "studio_token": {
+          "description": "Token associated with your bot in Botkit Studio",
+          "required":false
+      }
+  }
+}
